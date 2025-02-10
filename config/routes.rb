@@ -2,11 +2,11 @@ Rails.application.routes.draw do
 
   get("/", { :controller => "addition", :action => "show_addition_form" })
 
-  get("/ad", { :controller => "addition", :action => "show_addition_form" })
-  get("/wizard_add", { :controller => "addition", :action => "add_these" })
+  get("/add", { :controller => "addition", :action => "show_addition_form" })
+  get("/wizard_addition", { :controller => "addition", :action => "add_these" })
 
-  get("/subtract", { :controller => "subtract", :action => "show_sub_form" })
-  get("", { :controller => "subtraction", :action => "subtract" })
+  get("/wizard_subtract", { :controller => "subtraction", :action => "show_sub_form" })
+  get("", { :controller => "subtraction", :action => "subtraction" })
 
   get("/multiply", { :controller => "multiplication", :action => "multiplication" })
   get("/wizard_multiply", { :controller => "multiplication", :action => "multiply" })
